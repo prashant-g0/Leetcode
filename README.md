@@ -18,10 +18,9 @@ It’s a work-in-progress journey toward mastering problem-solving and preparing
 ---  
 
 Each folder contains categorized problems with:
-- ✅ Problem link
-- 🧠 Problem statement
-- 📝 Approach/Logic
-- 💡 Optimizations (if any)
+- ✅ Problem number/link
+- 🧠 Problem statement 
+- 📝 Approach/Logic 
 - 🧪 Time and space complexity
 - 💻 Code (Python)
 
