@@ -22,7 +22,7 @@ Each folder contains categorized problems with:
 - 🧠 Problem statement 
 - 📝 Approach/Logic 
 - 🧪 Time and space complexity
-- 💻 Code (Python)
+- 💻 Code (Python, Java)
 
 ---  
 
