@@ -29,7 +29,7 @@ Each folder contains categorized problems with:
 ## 🚀 Milestones
 
 - [ ] 100+ LeetCode problems solved
-- [ ] 50+ GFG problems covered
+- [x] 50+ GFG problems covered
 - [ ] Completed HackerRank interview prep kit
 - [ ] Codeforces Div 2 rating: 1400+
 - [ ] Participate in 50+ contests
