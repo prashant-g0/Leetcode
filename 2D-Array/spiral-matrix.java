@@ -1,54 +1,44 @@
-import java.util.*;
-class Main {
-    public static void inputMatrix(int matrix[][]){
-        Scanner ip = new Scanner(System.in);
-        for(int i=0; i<matrix.length; i++){
-            for(int j=0; j<matrix[0].length; j++){
-                matrix[i][j] = ip.nextInt();
-            }
-        }
-        ip.close();
-    }
-    public static void SpiralMatrix(int matrix[][]){
+// Given an m x n matrix, return all elements of the matrix in spiral order.
+
+// Example 1: 
+// Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+// Output: [1,2,3,6,9,8,7,4,5]
+
+// Code: 
+import java.util.ArrayList;
+import java.util.List;
+
+class Solution {
+    public List<Integer> spiralOrder(int[][] matrix) {
         int n = matrix.length;
-        int stRow=0, stCol=0, endRow=n-1, endCol=n-1;
+        int m = matrix[0].length;
+        List<Integer> SpiralList = new ArrayList<>();
+        int stRow=0, stCol=0, endRow=n-1, endCol=m-1;
         
         while(stRow<=endRow && stCol<=endCol){
             //top border
             for(int j=stCol; j<=endCol; j++){
-                System.out.print(matrix[stRow][j]);
+                SpiralList.add(matrix[stRow][j]);
             }
             //right
             for(int i=stRow+1; i<=endRow; i++){
-                System.out.print(matrix[i][endCol]);
+                SpiralList.add(matrix[i][endCol]);
             }
             //bottom
             for(int j=endCol-1; j>=stCol; j--){
-                System.out.print(matrix[endRow][j]);
+                if(stRow==endRow) break;
+                SpiralList.add(matrix[endRow][j]);
             }
             //left
             for(int i=endRow-1; i>=stRow+1; i--){
-                System.out.print(matrix[i][stCol]);
+                if(stCol==endCol) break;
+                SpiralList.add(matrix[i][stCol]);
             }
             stCol++;
             stRow++;
             endCol--;
             endRow--;
         }
-        
-    }
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter no. of rows: ");
-        int rows = sc.nextInt();
-        System.out.print("Enter no. of cols: ");
-        int cols = sc.nextInt();
-        
-        int matrix[][] = new int[rows][cols];
-        
-        inputMatrix(matrix);
-        SpiralMatrix(matrix);
-        
-        sc.close();
+        return SpiralList;
     }
 }
