@@ -7,7 +7,7 @@ It’s a work-in-progress journey toward mastering problem-solving and preparing
 ---
 
 ## 🌐 Platforms Covered
-
+Click to visit profile:
 <p float="left">
   <a href="https://leetcode.com/u/prashantg-0/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" /></a>
   <a href="https://www.geeksforgeeks.org/user/mailprasu0t8/"><img src="https://img.shields.io/badge/GeeksforGeeks-0F9D58?style=for-the-badge&logo=geeksforgeeks&logoColor=white" /></a>
@@ -29,7 +29,7 @@ Each folder contains categorized problems with:
 ## 🚀 Milestones
 
 - [ ] 100+ LeetCode problems solved
-- [x] 50+ GFG problems covered
+- [x] 100+ GFG problems solved
 - [ ] Completed HackerRank interview prep kit
 - [ ] Codeforces Div 2 rating: 1400+
 - [ ] Participate in 50+ contests
