@@ -13,33 +13,61 @@
 
 class nQueens {
 
-    public static void nQueensplacing(char[][] board, int row){
+    public static boolean isSafe(char[][] board, int row, int col){
+        // vertically up
+        for(int i=row-1; i>=0; i--){
+            if(board[i][col]=='Q'){
+                return false;
+            }
+        }
+
+        // diagonal up left
+        for(int i=row-1, j=col-1; i>=0 && j>=0; i--, j--){
+            if(board[i][j]=='Q'){
+                return false;
+            }
+        }
+
+        // diagonal up right
+        for(int i=row-1, j=col+1; i>=0 && j<board.length; i--, j++){
+            if(board[i][j]=='Q'){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void placeQueens(char[][] board, int row){
         int totCol = board.length;
         if(row == totCol){
-            System.err.println("======Board======");
+            count++;
             printBoard(board);
             return;
         }
 
         for(int j=0; j<totCol; j++){
-            board[row][j] = 'Q';
-            nQueensplacing(board, row+1); // recursion
-            board[row][j] = '.'; // backtracking
+            if(isSafe(board, row, j)){ // place queen only when safe to place
+                board[row][j] = 'Q';
+                placeQueens(board, row+1); // recursion
+                board[row][j] = '.'; // backtracking
+            }
         }
     }
 
     public static void printBoard(char[][] board){
+        System.err.println("======Board======");
         int n = board.length;
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
                 System.out.print(board[i][j] + " ");
             }
-            System.err.println();
+            System.out.println();
         }
     }
 
+    static int count = 0;
     public static void main(String[] args) {
-        int n = 2;
+        int n = 4;
         char[][] board = new char[n][n];
 
         for(int i=0; i<n; i++){
@@ -48,7 +76,8 @@ class nQueens {
             }
         }
 
-        nQueensplacing(board, 0);
+        placeQueens(board, 0);
+        System.out.println("Total Solutions: " + count);
         //printBoard(board);
     }
 }
