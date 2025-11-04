@@ -81,3 +81,5 @@ class nQueens {
         //printBoard(board);
     }
 }
+
+// Time Complexity: O(n!)
