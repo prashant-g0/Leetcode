@@ -22,13 +22,13 @@ Each folder contains categorized problems with:
 - 🧠 Problem statement 
 - 📝 Approach/Logic 
 - 🧪 Time and space complexity
-- 💻 Code (Python, Java)
+- 💻 Code (Python/Java)
 
 ---  
 
 ## 🚀 Milestones
 
-- [ ] 100+ LeetCode problems solved
+- [x] 100+ LeetCode problems solved
 - [x] 100+ GFG problems solved
 - [ ] Completed HackerRank interview prep kit
 - [ ] Codeforces Div 2 rating: 1400+
