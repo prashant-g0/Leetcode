@@ -16,6 +16,8 @@ public class ratInAMaze{
             sol[row][col] = 1;
             if(solver(maze, row+1, col, sol)) return true;
             if(solver(maze, row, col+1, sol)) return true;
+            if(solver(maze, row-1, col, sol)) return true;
+            if(solver(maze, row, col-1, sol)) return true;
             sol[row][col] = 0;
             return false;
         }
@@ -47,9 +49,9 @@ public class ratInAMaze{
     public static void main(String[] args) {
         int maze[][] = { 
             {1,0,0,0},
-            {1,1,0,1},
-            {0,1,0,0},
-            {1,1,1,1} 
+            {1,1,1,0},
+            {1,1,1,1},
+            {1,0,1,1} 
         };
 
         solveMaze(maze);
