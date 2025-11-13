@@ -11,12 +11,14 @@ public class LinkedList{
 
     public static Node head;
     public static Node tail;
+    public static int size; // O(1), if loop is used then size will take O(n) time
 
     public void addFirst(int data){
         // add first O(1) - a newNode before the node1 [head->node1->node2->tail] ---> [head->node0->node1->node2->tail]
 
         // Step1: Create a new node
         Node newNode = new Node(data);
+        size++;
 
         // if newNode is the ultimate new node
         if(head == null){
@@ -30,11 +32,32 @@ public class LinkedList{
         head = newNode;
     }
 
+    public void addMiddle(int idx, int data){
+        if(idx == 0){
+            addFirst(data);
+            return;
+        }
+
+        Node temp = head;
+        int i = 0;
+
+        while(i<idx-1){
+            temp = temp.next;
+            i++;
+        }
+
+        Node newNode = new Node(data);
+        size++;
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
+
     public void addLast(int data){
         // add last O(1) - a newNode after the current last node [head->node1->node2->tail] ---> [head->node1->node2->node3->tail]
 
         // Step1: Create a new node
         Node newNode = new Node(data);
+        size++;
 
         // if newNode is the ultimate new node
         if(head == null){
@@ -46,6 +69,28 @@ public class LinkedList{
         tail.next = newNode;
         // Step3: the newNode is now the tail node
         tail = newNode;
+    }
+
+    public int removeFirst(){
+        if (size == 0){
+            System.out.println("LL is empty!");
+            return Integer.MIN_VALUE;
+        } else if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size = 0;
+            return val;
+        }
+
+        int val = head.data;
+        head = head.next; 
+        // we shifted the head to the next node 
+        // and the current node (previously pointed by head) will get deleted by garbage collector 
+        // because there's exactly no way to track back to that node, 
+        // it useless and hence deleted by java inbuilt garbage collector.
+        
+        size--;
+        return val;
     }
 
     public void printLL(){ //O(n)
@@ -75,6 +120,9 @@ public class LinkedList{
         ll.addLast(5);
         ll.addLast(6);
         ll.printLL();
+        ll.addMiddle(0, 7);
+        ll.printLL();
+        System.out.println("Size of the LL: " + size);
 
         // output: 3->2->1->4->5->6
     }
