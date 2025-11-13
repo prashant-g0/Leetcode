@@ -5,6 +5,8 @@
 // Output: [[], [2], [2, 4], [4]]
 
 // Code
+import java.util.ArrayList;
+
 class Solution {
     public static void subsetBuild(int i, int[] arr, ArrayList<ArrayList<Integer>> res, ArrayList<Integer> subset){
         
