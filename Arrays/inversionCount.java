@@ -1,4 +1,4 @@
-class Solution {
+class inversionCount {
     static int merge(int arr[], int st, int mid, int end){
         int i=st, j=mid+1, k=0;
         int temp[] = new int[end-st+1];
@@ -36,7 +36,13 @@ class Solution {
         }
         return invCount;
     }
-    static int inversionCount(int arr[]) {
+
+    static int Count(int arr[]) {
         return mergeSort(arr, 0, arr.length-1);
+    }
+
+    public static void main (String [] args){
+        int[] arr = {2, 4, 1, 3, 5};
+        Count(arr);
     }
 }
