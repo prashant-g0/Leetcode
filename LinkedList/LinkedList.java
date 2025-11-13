@@ -88,7 +88,30 @@ public class LinkedList{
         // and the current node (previously pointed by head) will get deleted by garbage collector 
         // because there's exactly no way to track back to that node, 
         // it useless and hence deleted by java inbuilt garbage collector.
-        
+
+        size--;
+        return val;
+    }
+
+    public int removeLast(){
+        if(size == 0){
+            System.out.println("LL is empty!");
+            return Integer.MIN_VALUE;
+        } else if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size = 0;
+            return val;
+        }
+
+        Node temp = head;
+        while(temp.next.next != null){
+            temp = temp.next;
+        }
+
+        int val = temp.next.data;
+        temp.next = null;
+        tail = temp;
         size--;
         return val;
     }
@@ -112,19 +135,22 @@ public class LinkedList{
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         ll.printLL();
+
         ll.addFirst(1);
         ll.addFirst(2);
         ll.addFirst(3);
-        ll.printLL();
         ll.addLast(4);
         ll.addLast(5);
         ll.addLast(6);
+
         ll.printLL();
+
         ll.addMiddle(0, 7);
+
+        ll.removeLast();
+
         ll.printLL();
         System.out.println("Size of the LL: " + size);
-
-        // output: 3->2->1->4->5->6
     }
 }
 
