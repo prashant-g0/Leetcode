@@ -142,8 +142,8 @@ public class LinkedList{
 
         return idx+1;
     }
-
-    public int recursiveSearch(int key){
+ 
+    public int recursiveSearch(int key){ // O(n)
         return helper(head, key);
     }
 
