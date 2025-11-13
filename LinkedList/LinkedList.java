@@ -116,6 +116,19 @@ public class LinkedList{
         return val;
     }
 
+    public int iterativeSearch(int val){
+        Node temp = head;
+        int i = 0;
+        while(temp != null){
+            if(temp.data == val){
+                return i;
+            }
+            temp = temp.next;
+            i++;
+        }
+        return -1;
+    }
+
     public void printLL(){ //O(n)
         if(head == null){
             System.out.println("LinkedList is empty!");
@@ -150,6 +163,7 @@ public class LinkedList{
         ll.removeLast();
 
         ll.printLL();
+        System.out.println("Value found at index: " + ll.iterativeSearch(4));
         System.out.println("Size of the LL: " + size);
     }
 }
