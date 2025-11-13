@@ -116,7 +116,7 @@ public class LinkedList{
         return val;
     }
 
-    public int iterativeSearch(int val){
+    public int iterativeSearch(int val){ // O(n)
         Node temp = head;
         int i = 0;
         while(temp != null){
@@ -127,6 +127,24 @@ public class LinkedList{
             i++;
         }
         return -1;
+    }
+
+    public int helper(Node head, int val){
+        if(head == null){
+            return -1;
+        } else if(head.data == val){
+            return 0;
+        }
+        int idx = helper(head.next, val);
+        if(idx == -1){
+            return -1;
+        }
+
+        return idx+1;
+    }
+
+    public int recursiveSearch(int key){
+        return helper(head, key);
     }
 
     public void printLL(){ //O(n)
@@ -164,6 +182,7 @@ public class LinkedList{
 
         ll.printLL();
         System.out.println("Value found at index: " + ll.iterativeSearch(4));
+        System.out.println("Value found at index: " + ll.recursiveSearch(14));
         System.out.println("Size of the LL: " + size);
     }
 }
