@@ -12,6 +12,15 @@ public class ReverseDll {
     public static Node head;
     public static Node tail;
 
+    public void printll(){
+        Node temp = head;
+        while(temp!=null){
+            System.out.println(temp.data+"->");
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
+
     public static void main(String[] args) {
         ReverseDll r = new ReverseDll();
         r.printll();
