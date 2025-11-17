@@ -39,25 +39,41 @@ public class Basics {
     }
 
     // removeFirst
-    public void removeFirst(){
+    public int removeFirst(){
         if(size == 0){
             System.out.println("List is empty!...");
-            return;
+            return Integer.MIN_VALUE;
         }
+
+        int val = head.data;
+        size--;
+        if(size == 1){
+            head = tail = null;
+            return val;
+        }
+
         head = head.next;
         head.prev = null;
-        size--;
+        return val;
     }
 
     // removeLast
-    public void removeLast(){
+    public int removeLast(){
         if(size == 0){
             System.out.println("List is empty!...");
-            return;
+            return Integer.MIN_VALUE;
         }
+
+        int val = tail.data;
+        size--;
+        if(size == 1){
+            head = tail = null;
+            return val;
+        }
+
         tail = tail.prev;
         tail.next = null;
-        size--;
+        return val;
     }
 
 
