@@ -39,6 +39,15 @@ public class Basics {
     }
 
     // removeFirst
+    public void removeFirst(){
+        if(size == 0){
+            System.out.println("List is empty!...");
+            return;
+        }
+        head = head.next;
+        head.prev = null;
+        size--;
+    }
 
     // removeLast
 
@@ -67,5 +76,10 @@ public class Basics {
         b.addFirst(3);
         b.addLast(4);
         b.printll();
+        System.out.println("Size: "+size);
+
+        b.removeFirst();
+        b.printll();
+        System.out.println("Size: "+size);
     }
 }
