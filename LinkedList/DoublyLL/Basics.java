@@ -50,6 +50,15 @@ public class Basics {
     }
 
     // removeLast
+    public void removeLast(){
+        if(size == 0){
+            System.out.println("List is empty!...");
+            return;
+        }
+        tail = tail.prev;
+        tail.next = null;
+        size--;
+    }
 
 
     public void printll(){
@@ -79,6 +88,10 @@ public class Basics {
         System.out.println("Size: "+size);
 
         b.removeFirst();
+        b.printll();
+        System.out.println("Size: "+size);
+
+        b.removeLast();
         b.printll();
         System.out.println("Size: "+size);
     }
