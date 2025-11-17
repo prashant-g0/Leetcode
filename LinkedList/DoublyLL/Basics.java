@@ -26,6 +26,17 @@ public class Basics {
         head = newNode;
     }
     // addLast
+    public void addLast(int data){
+        Node newNode = new Node(data);
+        size++;
+        if(size == 0){
+            head = tail = newNode;
+            return;
+        }
+        tail.next = newNode;
+        newNode.prev = tail;
+        tail = newNode;
+    }
 
     // removeFirst
 
@@ -54,6 +65,7 @@ public class Basics {
         b.addFirst(1);
         b.addFirst(2);
         b.addFirst(3);
+        b.addLast(4);
         b.printll();
     }
 }
