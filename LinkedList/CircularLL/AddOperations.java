@@ -82,7 +82,7 @@ public class AddOperations {
             temp = temp.next;
         } while(temp!=head);
 
-        System.out.println("null");
+        System.out.println("(back to head)");
     }
 
     public static void main(String[] args) {
