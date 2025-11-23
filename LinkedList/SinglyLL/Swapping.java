@@ -12,7 +12,7 @@ public class Swapping {
     public static Node head;
 
     public Node swapping(Node head, int k){
-        Node first = head, second = head, curr = head;
+        Node first, second = head, curr = head;
 
         for(int i=1; i<k; i++){
             curr = curr.next;
@@ -43,7 +43,7 @@ public class Swapping {
     public static void main(String[] args) {
         Swapping s = new Swapping();
         int k = 1;
-        Node head = new Node(1);
+        head = new Node(1);
         head.next = new Node(2);
         head.next.next = new Node(3);
         head.next.next.next = new Node(4);
