@@ -28,6 +28,9 @@ public class UsingLinkedList {
         }
 
         public int pop(){
+            if(isEmpty()){
+                return -1;
+            }
             int top = head.data;
             head = head.next;
             return top;

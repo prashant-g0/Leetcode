@@ -13,6 +13,9 @@ public class UsingArrayList {
         }
 
         public int pop(){
+            if(isEmpty()){
+                return -1;
+            }
             int top = stack.get(stack.size()-1);
             stack.remove(stack.size()-1);
             return top;
