@@ -32,4 +32,3 @@ public class StocksSpan {
         System.out.print(calculateSpan(prices));
     }
 }
-// leetcode 901
