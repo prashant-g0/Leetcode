@@ -1,6 +1,7 @@
-# 🧠 DSA Journey – My Coding Practice Repository
+# Data Structure and Algorithms
+## My Coding Practice Repository
 
-Welcome to my DSA (Data Structures and Algorithms) practice repository! This repo is a collection of my solutions to problems solved across various competitive programming platforms like **LeetCode**, **GeeksforGeeks (GFG)**, **HackerRank**, **Codeforces**, and more.
+Welcome to my DSA practice repository! This repo is a collection of my solutions to problems solved across various competitive programming platforms like **LeetCode**, **GeeksforGeeks (GFG)**, **HackerRank**, **Codeforces**, and more.
 
 It’s a work-in-progress journey toward mastering problem-solving and preparing for coding interviews. I continuously update this with new problems, optimized solutions, and learning notes.
 
@@ -17,14 +18,17 @@ Click to visit profile:
 
 ---  
 
-Each folder contains categorized problems with:
-- ✅ Problem number/link
-- 🧠 Problem statement 
-- 📝 Approach/Logic 
-- 🧪 Time and space complexity
-- 💻 Code (Python/Java)
+## Topics Completed
+- [x] Arrays  
+- [x] n-D Arrays
+- [x] ArrayList
+- [x] Recursion / Backtracking
+- [x] Strings
+- [x] LinkedList
+- [x] Stacks
+- [x] Queue
 
----  
+---
 
 ## 🚀 Milestones
 
@@ -46,4 +50,4 @@ This is primarily a personal learning repo, but feel free to open an issue or a 
 
 ---  
 
-> “Practice is the hardest part of learning, and training is the essence of transformation.” – Ann Voskamp
+> “Practice is the hardest part of learning, and training is the essence of transformation.” - Ann Voskamp
