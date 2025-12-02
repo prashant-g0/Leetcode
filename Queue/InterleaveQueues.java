@@ -10,7 +10,7 @@ public class InterleaveQueues {
             temp.add(q.remove());
         }
 
-        for(int i=0; i<size/2; i++){
+        while(!temp.isEmpty()){
             q.add(temp.remove());
             q.add(q.remove());
         }
