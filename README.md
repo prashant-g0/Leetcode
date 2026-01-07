@@ -1,13 +1,4 @@
-# Data Structure and Algorithms
-## My Coding Practice Repository
-
-Welcome to my DSA practice repository! This repo is a collection of my solutions to problems solved across various competitive programming platforms like **LeetCode**, **GeeksforGeeks (GFG)**, **HackerRank**, **Codeforces**, and more.
-
-It’s a work-in-progress journey toward mastering problem-solving and preparing for coding interviews. I continuously update this with new problems, optimized solutions, and learning notes.
-
----
-
-## 🌐 Platforms Covered
+# Data Structure and Algorithms  
 Click to visit profile:
 <p float="left">
   <a href="https://leetcode.com/u/prashantg-0/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" /></a>
@@ -15,6 +6,16 @@ Click to visit profile:
   <a href="https://www.hackerrank.com/profile/mail_prashantg0"><img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" /></a>
   <a href="https://codeforces.com/"><img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge" /></a>
 </p>
+
+---  
+## 🚀 Milestones
+
+- [x] 100+ LeetCode problems solved
+- [x] 100+ GFG problems solved
+- [x] Participate in 10+ contests on leetcode
+- [ ] Completed HackerRank interview prep kit
+- [ ] Codeforces Div 2 rating: 1400+
+- [ ] Master Graph, DP, and Tree problems
 
 ---  
 
@@ -29,17 +30,6 @@ Click to visit profile:
 - [x] Queue
 
 ---
-
-## 🚀 Milestones
-
-- [x] 100+ LeetCode problems solved
-- [x] 100+ GFG problems solved
-- [ ] Completed HackerRank interview prep kit
-- [ ] Codeforces Div 2 rating: 1400+
-- [ ] Participate in 50+ contests
-- [ ] Master Graph, DP, and Tree problems
-
----  
 
 ## 🤝 Contributions
 
