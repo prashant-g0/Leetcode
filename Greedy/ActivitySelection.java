@@ -16,10 +16,9 @@ public class ActivitySelection{
         int start[] = {10, 12, 20};
         int end[] = {20, 25, 30};
 
-        int max_activity = 0;
         ArrayList<Integer> res = new ArrayList<>();
 
-        max_activity = 1;
+        int max_activity = 1;
         res.add(0);
         int last_end = end[0];
         for(int i=1; i<end.length; i++){
