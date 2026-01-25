@@ -24,13 +24,10 @@ public class LargestOdd {
         return largest_odd - 2*(k-1);
     }
     public static void main(String[] args) {
-        int L = -10, R = 10, k = 8;
+        int L = 0, R = 5, k = 3;
 
         int res = countOdd(L, R, k);
-        if(res==0){
-            System.out.println("No "+k+"th odd number in range!");
-        } else{{
-            System.out.println(k+"th odd is: "+res);
-        }}
+        if(res==0)System.out.println("No "+k+"th odd number in range!");
+        System.out.println(k+"th odd is: "+res);
     }
 }
