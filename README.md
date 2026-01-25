@@ -20,14 +20,13 @@ Click to visit profile:
 ---  
 
 ## Topics Completed
-- [x] Arrays  
-- [x] n-D Arrays
-- [x] ArrayList
-- [x] Recursion / Backtracking
+- [x] Arrays, nD Arrays, ArrayList  
 - [x] Strings
 - [x] LinkedList
 - [x] Stacks
-- [x] Queue
+- [x] Queue, Deque
+- [x] Recursion / Backtracking
+- [x] Greedy
 
 ---
 
