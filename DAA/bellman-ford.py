@@ -26,7 +26,7 @@ for i in range(edges_count):
     u, v, w = map(int, input("Enter u, v, weight: "). split())
     edges.append(Edge(u-1, v-1, w))
     
-source = int(input("Enter source vertex: "))
+source = int(input("Enter source vertex: "))-1
 distances = bellman_ford(vertices, edges, source)
 
 if distances:
@@ -36,3 +36,18 @@ if distances:
             print(f"{i+1}\tINF")
         else:
             print(f"{i+1}\t{distances[i]}")
+            
+# input
+# Enter number of vertices: 7
+# Enter number of edges: 10
+# Enter u, v, weight: 1 2 6
+# Enter u, v, weight: 1 3 5
+# Enter u, v, weight: 1 4 5
+# Enter u, v, weight: 2 5 -1
+# Enter u, v, weight: 3 2 -2
+# Enter u, v, weight: 3 5 1
+# Enter u, v, weight: 4 3 -2
+# Enter u, v, weight: 4 6 -1
+# Enter u, v, weight: 5 7 3
+# Enter u, v, weight: 6 7 3
+# Enter source vertex: 1
