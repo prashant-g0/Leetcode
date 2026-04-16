@@ -30,7 +30,7 @@ def quick_sort(arr, st, end):
         quick_sort(arr, idx, end)
 
 if __name__ == "__main__":
-    arr = [4, 5, 6, 2, 1, 1, 0, -1, -35, 45]
+    arr = list(map(int, input("Enter array values: ").split()))
     print(f"Elements: {arr}")
     print(f"Sorted (Easiest Method): {quicksort(arr)}")
     

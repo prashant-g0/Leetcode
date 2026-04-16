@@ -16,8 +16,9 @@ def recur_fib(num):
         print(recur(i), end=', ')
 
 if __name__ == "__main__":
+    n = int(input("Number of terms: "))
     print(f"Without Recursion:")
-    fib(10)
+    fib(n)
     print(f"\nWith Recursion:")
-    recur_fib(10)
+    recur_fib(n)
     

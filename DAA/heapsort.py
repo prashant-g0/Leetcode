@@ -21,7 +21,8 @@ def heapsort(arr):
         heapify(arr, i, 0)
 
 if __name__ == "__main__":
-    arr = [2, 3, 11, 9, 3, -1, 0]
+    arr = list(map(int, input("Enter array values: ").split()))
+    print(f"Array: {arr}")
     
     heapsort(arr)
     print(f"Sorted: {arr}")

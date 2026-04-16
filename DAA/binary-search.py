@@ -24,8 +24,8 @@ def recur_binary_search(arr, target, st, end):
     
 
 if __name__ == "__main__":
-    arr = [2, 3, 4, 5, 7, 8, 9, 10, 13, 15, 16, 17]
-    target = 6
+    arr = list(map(int, input("Enter array values: ").split()))
+    target = int(input("Enter target value: "))
     
     print("Without Recursion: ")
     idx = binary_search(arr, target)
